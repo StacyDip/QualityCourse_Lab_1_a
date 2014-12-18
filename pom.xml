@@ -22,7 +22,6 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>2.13</version>
 
-                
                 <configuration>
                     <logViolationsToConsole>true</logViolationsToConsole>
                     <checkstyleRules>
