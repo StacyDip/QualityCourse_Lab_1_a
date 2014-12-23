@@ -71,7 +71,7 @@
                 <executions>
                     <execution>
                         <id>site</id>
-                        <phase>pre-site</phase>
+                        <phase>test-compile</phase>
                         <goals>
                             <goal>cobertura</goal>
                         </goals>
