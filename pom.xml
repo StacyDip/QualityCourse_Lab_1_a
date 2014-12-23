@@ -64,20 +64,45 @@
                 </executions>
             </plugin>
 
-          <plugin>
+          <!--<plugin>-->
+                <!--<groupId>org.codehaus.mojo</groupId>-->
+                <!--<artifactId>cobertura-maven-plugin</artifactId>-->
+                <!--<version>2.5.2</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>site</id>-->
+                        <!--<phase>pre-site</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>cobertura</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+
+
+            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
-                <version>2.5.2</version>
+                <version>2.5.1</version>
                 <executions>
                     <execution>
-                        <id>site</id>
-                        <phase>pre-site</phase>
+                        <id>cobertura-clean</id>
+                        <phase>clean</phase>
                         <goals>
-                            <goal>cobertura</goal>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>cobertura-instrument</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>instrument</goal>
                         </goals>
                     </execution>
                 </executions>
             </plugin>
+
+
 
 
 
@@ -126,4 +151,8 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
+
+
+
+
 </project>
