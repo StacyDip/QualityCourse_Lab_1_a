@@ -71,7 +71,7 @@
                 <executions>
                     <execution>
                         <id>site</id>
-                        <phase>site</phase>
+                        <phase>process-test-classes</phase>
                         <goals>
                             <goal>cobertura</goal>
                         </goals>
